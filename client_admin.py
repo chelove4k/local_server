@@ -2,10 +2,11 @@ import socket
 import os
 import time
 
+local_ip = input('ip >>')
 while True:
     command = input('>> ')
     hostname = socket.gethostname()
-    local_ip = socket.gethostbyname(hostname)
+    # local_ip = socket.gethostbyname(hostname)
     HOST = local_ip
     PORT = 65432
 
