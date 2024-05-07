@@ -7,6 +7,8 @@ local_ip = socket.gethostbyname(hostname)
 HOST = local_ip
 PORT = 65432
 
+print(HOST)
+
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
 s.listen(10)
